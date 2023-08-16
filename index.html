@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your E-Commerce Store</title>
+<title>Justin's Vehicle Emporium</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -11,7 +11,13 @@
     padding: 0;
     background-color: white;
     color: #333;
-  }
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+  
   header {
     background-color: black;
     color: white;
@@ -24,7 +30,7 @@
     text-align: center;
   }
   nav a {
-    color: blue;
+    color: red;
     text-decoration: none;
     margin: 0 15px;
   }
@@ -57,7 +63,7 @@
     margin: 5px 0;
   }
   .product button {
-    background-color: blue;
+    background-color: red;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -67,20 +73,17 @@
   .product button:hover {
     background-color: #0056b3;
   }
-  footer {
-    background-color: gray;
-    color: white;
+  #scrolling-banner {
+    background-color: yellow;
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
+  
 </style>
 </head>
 <body>
   <header>
-    <h1>JUSTIN'S WEAPONS EMPORIUM</h1>
+    <h1>Justin's Vehicle Emporium</h1>
   </header>
   <nav>
     <a href="#">Home</a>
@@ -88,26 +91,37 @@
     <a href="#">Cart</a>
     <a href="#">Contact</a>
   </nav>
+  <!-- Scrolling Banner -->
+  <div id="scrolling-banner">
+    <marquee behavior="scroll" direction="left">
+      Special Offer: 50% Off All Vehicles - Limited Time Only!
+    </marquee>
+  </div>
   <section>
     <div class="product">
-      <img src="machine_gun.jpg" alt="Machine Gun" style="max-width: 300px; max-height: 300px">
-      <h3>Machine Gun</h3>
+      <img src="machine_gun.jpg" alt="Beater" style="max-width: 300px; max-height: 300px">
+      <h3>Old Beater</h3>
       <p>Price: $1999.99</p>
       <button>Add to Cart</button>
     </div>
     <div class="product">
-      <img src="grenades.jpg" alt="Grenades" style="max-width: 300px; max-height: 300px">
-      <h3>Grenades</h3>
-      <p>Price: $49.99</p>
+      <img src="grenades.jpg" alt="Posh Car" style="max-width: 300px; max-height: 300px">
+      <h3>Cool Kids car</h3>
+      <p>Price: $34249.99</p>
       <button>Add to Cart</button>
     </div>
     <div class="product">
-      <img src="explosives.jpg" alt="Explosives" style="max-width: 300px; max-height: 300px">
-      <h3>Explosives</h3>
-      <p>Price: $149.99</p>
+      <img src="explosives.jpg" alt="Technical" style="max-width: 300px; max-height: 300px">
+      <h3>Technical</h3>
+      <p>Price: $23432149.99</p>
       <button>Add to Cart</button>
     </div>
   </section>
+
+
+  <br>
+  <br>
+   <br>
   <footer>
     <p>&copy; 2023 Your E-Commerce Store. All rights reserved.</p>
   </footer>
