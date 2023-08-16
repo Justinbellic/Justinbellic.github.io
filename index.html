@@ -1,1 +1,115 @@
-<h1> TESTING </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your E-Commerce Store</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+  }
+  header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s;
+  }
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  .product h3 {
+    margin: 10px 0;
+  }
+  .product p {
+    margin: 5px 0;
+  }
+  .product button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .product button:hover {
+    background-color: #0056b3;
+  }
+  footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>JUSTIN'S WEAPONS EMPORIUM</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+  </nav>
+  <section>
+    <div class="product">
+      <img src="machine_gun.jpg" alt="Machine Gun">
+      <h3>Machine Gun</h3>
+      <p>Price: $1999.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="grenades.jpg" alt="Grenades">
+      <h3>Grenades</h3>
+      <p>Price: $49.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="explosives.jpg" alt="Explosives">
+      <h3>Explosives</h3>
+      <p>Price: $149.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 Your E-Commerce Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
