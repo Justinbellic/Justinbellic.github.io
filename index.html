@@ -1,224 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Justin's Vehicle Emporium</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: #333;
-    background-image: url('back.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Vehicle Emporium</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: #333;
+            background-image: url('back.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
 
-  
-  header {
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  nav {
-    background-color: gray;
-    padding: 10px;
-    text-align: center;
-  }
-  nav a {
-    color: red;
-    text-decoration: none;
-    margin: 0 15px;
-  }
-  section {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .product {
-    border: 1px solid gray;
-    padding: 20px;
-    margin: 15px;
-    text-align: center;
-    background-color: white;
-    transition: transform 0.3s;
-  }
-  .product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .product img {
-    max-width: 100%;
-    height: auto;
-  }
-  .product h3 {
-    margin: 10px 0;
-  }
-  .product p {
-    margin: 5px 0;
-  }
-  .product button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .product button:hover {
-    background-color: #0056b3;
-  }
-  #scrolling-banner {
-    background-color: yellow;
-    padding: 10px;
-    text-align: center;
-  }
-  footer{
-    background-color: yellow;
-    padding: 10px;
-    text-align: center;
-  }
 
-  img {
-  border-radius: 50%;
-}
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-/* Your existing CSS styles here */
+        nav {
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+        }
 
-  /* Slideshow container */
-  .slideshow-container {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            text-decoration: solid;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-weight: 900;
 
-  /* Slides */
-  .slide {
-    display: none;
-  }
+        }
 
-  /* Slide images */
-  .slide img {
-    width: 100%;
-    height: auto;
-  }
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-  /* Slideshow navigation dots */
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
+        .product {
+            border: 1px solid gray;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            background-color: white;
+            transition: transform 0.3s;
+        }
 
-  .active {
-    background-color: #717171;
-  }
-  
-</style>
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            margin: 5px 0;
+        }
+
+        .product button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #0056b3;
+        }
+
+        #scrolling-banner {
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        /* Your existing CSS styles here */
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Slides */
+        .slide {
+            display: none;
+        }
+
+        /* Slide images */
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Slideshow navigation dots */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
+
 <body>
-  <header>
-    <h1>Justin's Vehicle Emporium</h1>
-  </header>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Cart</a>
-    <a href="#">Contact</a>
-  </nav>
-  <!-- Scrolling Banner -->
-  <div id="scrolling-banner">
-    <marquee behavior="scroll" direction="left">
-      <b>Special Offer: 50% Off All Vehicles - Limited Time Only!</b>
-    </marquee>
-  </div>
-
-  
-  <br>
-  <br>
-
-<!-- Slideshow Container -->
-<div class="slideshow-container">
-    <div class="slide fade">
-      <img src="slide1.jpg" alt="Slide 1">
+    <header>
+        <h1>Justin's Vehicle Emporium</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+        <a href="bts/homeREVAMPED.html">CLICK HERE TO BTS WEBSITE</a>
+        <a href="tuition/homeREVAMPED.html">CLICK HERE TO TUITION WEBSITE</a>
+    </nav>
+    <!-- Scrolling Banner -->
+    <div id="scrolling-banner">
+        <marquee behavior="scroll" direction="left">
+            <b>Special Offer: 50% Off All Vehicles - Limited Time Only!</b>
+        </marquee>
     </div>
-    <div class="slide fade">
-      <img src="slide2.jpg" alt="Slide 2">
+
+
+    <br>
+    <br>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="slide1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="slide2.jpg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="slide3.jpg" alt="Slide 3">
+        </div>
     </div>
-    <div class="slide fade">
-      <img src="slide3.jpg" alt="Slide 3">
+
+    <!-- Navigation Dots -->
+    <div style="text-align: center; margin-top: 20px;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
-  </div>
 
-  <!-- Navigation Dots -->
-  <div style="text-align: center; margin-top: 20px;">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-  <script>
-    let slideIndex = 0;
-    showSlides();
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
 
-    function showSlides() {
-      let slides = document.getElementsByClassName("slide");
-      let dots = document.getElementsByClassName("dot");
-      
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-  </script>
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 
 
 
-  <section>
-    <div class="product">
-      <img src="machine_gun.jpg" alt="Beater" style="max-width: 300px; max-height: 300px" border-radius: 50%;>
-      <h3>Old Beater</h3>
-      <p>Price: $1999.99</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product">
-      <img src="grenades.jpg" alt="Posh Car" style="max-width: 300px; max-height: 300px" border-radius: 50%;>
-      <h3>Cool Kids car</h3>
-      <p>Price: $34249.99</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product">
-      <img src="explosives.jpg" alt="Technical" style="max-width: 300px; max-height: 300px" border-radius: 50%;>
-      <h3>Technical</h3>
-      <p>Price: $23432149.99</p>
-      <button>Add to Cart</button>
-    </div>
-  </section>
+    <section>
+        <div class="product">
+            <img src="machine_gun.jpg" alt="Beater" style="max-width: 300px; max-height: 300px" border-radius: 50%;>
+            <h3>Old Beater</h3>
+            <p>Price: $1999.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="grenades.jpg" alt="Posh Car" style="max-width: 300px; max-height: 300px" border-radius: 50%;>
+            <h3>Cool Kids car</h3>
+            <p>Price: $34249.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="explosives.jpg" alt="Technical" style="max-width: 300px; max-height: 300px" border-radius: 50%;>
+            <h3>Technical</h3>
+            <p>Price: $23432149.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
 
 
-  <br>
-  <br>
-   <br>
-  <footer>
-    <p>&copy; 2023 Your E-Commerce Store. All rights reserved.</p>
-  </footer>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2023 Your E-Commerce Store. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
